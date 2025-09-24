@@ -2,7 +2,7 @@
 
 Небольшой логгер с обработкой строк через fstring, отправкой ошибок в stderr и простой конфигурацией.
 
-[!screenshot](screenshot.jpg)
+![Screenshot](screenshot.jpg)
 
 # Установка
 
