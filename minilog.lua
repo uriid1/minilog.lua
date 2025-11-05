@@ -46,7 +46,7 @@ end
 
 local function _src_debug()
   local info = debug.getinfo(3, 'Sl')
-  return 
+  return
     colorize(colors.yellow,
     info.short_src..':'..info.currentline)..':'
 end
@@ -64,7 +64,7 @@ local function f(text, args)
 end
 
 function log.info(text, ctx)
-  if log.disable_stdout and output_file == nil then
+  if log.disable_stdout and log.output_file == nil then
     return
   end
 
@@ -96,7 +96,7 @@ function log.info(text, ctx)
 end
 
 function log.warn(text, ctx)
-  if log.disable_stdout and output_file == nil then
+  if log.disable_stdout and log.output_file == nil then
     return
   end
 
@@ -128,7 +128,7 @@ function log.warn(text, ctx)
 end
 
 function log.error(text, ctx)
-  if log.disable_stderr and output_file == nil then
+  if log.disable_stderr and log.output_file == nil then
     return
   end
 
@@ -156,7 +156,7 @@ function log.error(text, ctx)
   stdout:write(table.concat(prefix))
   io.flush()
   stderr:write(table.concat(buffer))
-  
+
   if log.force_flush then
     io.flush()
   end
