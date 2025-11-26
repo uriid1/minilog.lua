@@ -6,10 +6,10 @@
 
 # Установка
 
-Установка под Lua 5.1 или  luaJit
+Установка под Lua 5.1 или luaJit
 
 ```bash
-luarocks install --local --lua-version=5.1 minilog-1.0-0.rockspec
+luarocks install --local --lua-version=5.1 minilog
 ```
 
 Загрузка в проект
