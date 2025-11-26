@@ -45,11 +45,6 @@ local log = {
   colors = colors
 }
 
--- TODO:
-log.cfg = function(cfg)
-
-end
-
 local use_color = (function()
   local term = os.getenv('TERM')
 

@@ -1,8 +1,8 @@
 package = "minilog"
-version = "1.0-0"
+version = "1.1-0"
 source = {
   url = "git+https://github.com/uriid1/minilog.lua.git",
-  tag = "v1.0.0"
+  tag = "v1.1.0"
 }
 description = {
   summary = "A tiny lua logger with fstring.",
